@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Desarrollo de Interfaces Web</title>
+    <link rel="stylesheet" href="static/style.css">
+    
+    
+</head>
+<body>
+    
+
+<dialog id="DborrarCoche">
+    <form method="dialog">
+    <div>
+<h1>Borrar Coche</h1>
+<br>
+<p>¿Desea borrar la entrada seleccionada</p>
+<div>
+    <input type="submit" value="Borrar" id="cerrarModal">
+    <input type="submit" value="Mantener" src="index.html" >
+</div>
+</div>
+</form>
+</dialog>           
+            
+    <dialog id="dialogRegistro">
+        <div>
+        <form method="dialog">
+            <h1>Insertar nuevo Coche</h1>
+            <div>
+                <label for="txtEmail">Matricula</label>
+                <input type="text" name="email" id="txtEmail" required>
+                
+            </div>
+            <div>
+                <label for="txtUsername">Modelo</label>
+                <input type="text" name="username" id="txtUsername" required>
+            </div>
+            <div>
+                <label for="txtContraseña">Cliente</label>
+                <input type="text" name="password" id="txtContraseña" required>
+                
+            </div>
+            <div>
+                <label for="txtEntrada">Entrada</label>
+                <input type="date" name="password" id="txtEntrada" required>
+                
+            </div>
+            
+            <div>
+                <label for="txtSalida">Salida</label>
+                <input type="date" name="password" id="txtSalida" required>
+            </div>
+
+            <div>
+                <label for="select">Tarifa</label>
+                <select name="select">
+                    <option value="value1">Estandar</option>
+                    <option value="value2">Premium</option>
+                    <option value="value3">Oferta</option>
+                  </select>
+            </div>
+            <div>
+                <input type="submit" value="Insertar" src="index.html">
+                <input type="submit" value="Cancelar" src="index.html" >
+            </div>
+        </form>
+        </div>
+    </dialog>
+
+            <div class="admin">
+                <aside>
+                    <img src="https://www.cesurformacion.com/uploads/media/logo-small/09/19-cesur-fp.svg?v=6-0" alt="Logo Cesur">
+            
+                    <a href="#"> <span>Listado de entradas</span></a>
+                    <a href="#" id="btnRegistr"> Nueva Entrada</a>
+                    <a href="#"> <span>Clientes</span></a>
+                    <a href="#"> <span>Herramientas</span></a>
+                    <div class="separator"></div>
+                    <a href="#"> <span>Salir</span></a>
+                    
+            
+                </aside>
+            
+                <main class="admin">
+                    <h1>Listado de entradas</h1>
+            
+                    <div>
+                        <table >
+                            <thead>
+                                <tr>
+                                    <th>Matricula</th>
+                                    <th>Modelo</th>
+                                    <th>Cliente</th>
+                                    <th>Fecha de entrada</th>
+                                    <th>Fecha de salida</th>
+                                    <th>Tarifa</th>
+                                    <th>Coste total</th>
+                                    <th>Acciones</th>
+                                    
+                                </tr>        
+                            </thead>
+                            <tbody>
+                            
+                                <tr>
+                                    <td>ABC123</td>
+                                    <td>Toyota Camry</td>
+                                    <td>Juan Pérez</td>
+                                    <td>2023-01-05</td>
+                                    <td> 2023-01-10</td>
+                                    <td><button style="border-radius: 40px; ">Estandar</button></td>
+                                    <td>250€</td>
+                                    <td>
+                                    <button id="borrarCoche">Borrar</button>
+                                    </td>
+                                </tr>   
+                                <tr>
+                                    <td> XYZ789</td>
+                                    <td>Honda Civic</td>
+                                    <td>Maria Rodríguez</td>
+                                    <td>2023-02-12</td>
+                                    <td> 2023-02-18</td>
+                                    <td><button style="border-radius: 40px;">Premium</button></td>
+                                    <td>280€</td>
+                                    <td>
+                                        <button id="borrarCoche">Borrar</button>
+                                        </td>
+                                </tr>   
+                                <tr>
+                                    <td>DEF456</td>
+                                    <td>Ford Mustang</td>
+                                    <td>Carlos Gómez</td>
+                                    <td>2023-03-20</td>
+                                    <td> 2023-03-25</td>
+                                    <td><button style="border-radius: 40px;"> Oferta</button></td>
+                                    <td>350€</td>
+                                    <td>
+                                        <button id="borrarCoche">Borrar</button>
+                                        </td>
+                                </tr>   
+                                <tr>
+                                    <td>ABC123</td>
+                                    <td>Toyota Camry</td>
+                                    <td>Juan Pérez</td>
+                                    <td>2023-01-05</td>
+                                    <td> 2023-01-10</td>
+                                    <td><button style="border-radius: 40px;">Estandar</button></td>
+                                    <td>250€</td>
+                                    <td>
+                                        <button id="borrarCoche">Borrar</button>
+                                        </td>
+                                </tr>   
+                                <tr>
+                                    <td>ABC123</td>
+                                    <td>Toyota Camry</td>
+                                    <td>Juan Pérez</td>
+                                    <td>2023-01-05</td>
+                                    <td> 2023-01-10</td>
+                                    <td><button style="border-radius: 40px;">Estandar</button></td>
+                                    <td>250€</td>
+                                    <td>
+                                        <button id="borrarCoche">Borrar</button>
+                                        </td>
+                                </tr>   
+                                <tr>
+                                    <td>ABC123</td>
+                                    <td>Toyota Camry</td>
+                                    <td>Juan Pérez</td>
+                                    <td>2023-01-05</td>
+                                    <td> 2023-01-10</td>
+                                    <td><button style="border-radius: 40px;">Estandar</button></td>
+                                    <td>250€</td>
+                                    <td>
+                                        <button id="borrarCoche">Borrar</button>
+                                        </td>
+                                </tr>   
+                                <tr>
+                                    <td>ABC123</td>
+                                    <td>Toyota Camry</td>
+                                    <td>Juan Pérez</td>
+                                    <td>2023-01-05</td>
+                                    <td> 2023-01-10</td>
+                                    <td><button style="border-radius: 40px;">Estandar</button></td>
+                                    <td>250€</td>
+                                    <td>
+                                        <button id="borrarCoche">Borrar</button>
+                                        </td>
+                                </tr>   
+                                <tr>
+                                    <td>ABC123</td>
+                                    <td>Toyota Camry</td>
+                                    <td>Juan Pérez</td>
+                                    <td>2023-01-05</td>
+                                    <td> 2023-01-10</td>
+                                    <td><button style="border-radius: 40px;">Estandar</button></td>
+                                    <td>250€</td>
+                                    <td>
+                                        <button id="borrarCoche">Borrar</button>
+                                        </td>
+                                </tr>   
+                                <tr>
+                                    <td>ABC123</td>
+                                    <td>Toyota Camry</td>
+                                    <td>Juan Pérez</td>
+                                    <td>2023-01-05</td>
+                                    <td> 2023-01-10</td>
+                                    <td><button style="border-radius: 40px;">Estandar</button></td>
+                                    <td>250€</td>
+                                    <td>
+                                        <button id="borrarCoche">Borrar</button>
+                                        </td>
+                                </tr>   
+                                <tr>
+                                    <td>ABC123</td>
+                                    <td>Toyota Camry</td>
+                                    <td>Juan Pérez</td>
+                                    <td>2023-01-05</td>
+                                    <td> 2023-01-10</td>
+                                    <td><button style="border-radius: 40px;">Estandar</button></td>
+                                    <td>250€</td>
+                                    <td>
+                                        <button id="borrarCoche">Borrar</button>
+                                        </td>
+                                </tr>    
+                            
+                            </tbody>
+                           
+            
+                        </table>
+                    </div>
+            
+                    <form action="test.php" target="_blank" id="editForm" method="post">
+            
+                    </form>
+                    Creado por {{Daniel Ramos}}
+                </main>
+            </div>
+
+
+            <script src="static/app.js"></script>
+            
+
+</body>
+</html>

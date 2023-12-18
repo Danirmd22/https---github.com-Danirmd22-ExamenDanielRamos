@@ -1,0 +1,209 @@
+$azul : #002858;
+$azul2 : #002858aa;
+$amarillo: #ffc836;
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+/* Continuar desde aqui... */
+
+
+
+div.admin{
+    display:flex;
+    h1{
+        color: $amarillo;
+    }
+
+    aside{
+        width:200px;
+        background-color: $azul;
+        display:flex;
+        align-items: stretch;
+        padding: 15px;
+        gap:10px;
+        flex-direction: column;
+
+        &.minimize{
+            width:60px;
+            span{
+                display: none;
+            }
+        }
+
+        div.separator{
+            height:1px;
+            background-color:white;
+            margin:10px;            
+        }
+
+
+        a{
+            display: flex;
+            text-decoration: none;
+            color:white;
+            padding:1rem 0.5rem;
+            justify-content: center;
+            gap: 1rem;
+
+            &:hover{
+                background-color: $amarillo;
+                color: black
+            }
+        }
+    }
+
+}
+
+
+
+main.admin{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:2rem;
+    gap:1rem;
+
+    p.total span{
+        font-size:1.5rem;
+        font-weight: bold;
+        text-shadow: 0 0 2px yellow;
+    }
+
+    div:has(table){
+       margin:2rem;
+       height:500px;
+       overflow-y: scroll;
+       position:relative;
+    }
+
+    table{
+        text-align: center;
+        border:solid ;
+        border-color: $amarillo;
+        border-collapse: collapse;
+        tr{
+            background-color: $azul2;
+        }
+        
+        
+       
+      
+
+        thead{
+            position:sticky;
+            top:0px;
+            
+
+        }
+
+        td,th{
+            border-color: $amarillo;
+            padding:1rem 2rem;
+        }
+
+        td.options div{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap:1rem;
+            visibility: hidden;
+        }
+
+        
+
+        tr:hover td.options div{
+            visibility: visible;
+        }
+        tr{
+            color: $amarillo;
+            td{
+                
+                
+                border-color: $amarillo;
+            }
+        }
+
+        th{
+            background-color: $amarillo;
+            color: $azul;
+        }
+
+        tr:hover{
+            background-color: $amarillo ;
+            color: $azul;
+        }
+
+        tr:has(input[type=checkbox]:checked){
+          background-color: orange;  
+        }
+
+    }
+
+}
+
+
+dialog>div{
+    padding:0.5rem;
+    display:flex;
+    flex-direction: column;
+    width:400px;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        text-align: center;
+    }
+
+    div{
+        margin:0.5rem;
+        padding:0.5rem;
+        
+
+       
+
+        input:focus{
+            background-color:$amarillo;
+        }
+
+        label{
+            display:inline-block;
+            width: 140px;
+        }
+
+        p.info{
+            visibility: hidden;
+            //display:none;
+            color:blue;
+            font-size:0.75rem;
+            margin:0;
+            padding:0;
+            text-align: right;
+        }
+    }
+
+    div:has(input:focus){
+        background-color: whitesmoke;
+        label{
+            color:blue;
+        }
+        p.info{
+            visibility: visible;
+            //display:block;
+        }
+    }
+}
+
+
+#DborrarCoche>form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
